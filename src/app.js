@@ -7,7 +7,7 @@ const apiRoutes=require('./routes')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-app.use("/",apiRoutes)
+app.use("/",apiRoutes)  
 
 app.listen(process.env.PORT,()=>{
     if(process.env.PORT==undefined){
